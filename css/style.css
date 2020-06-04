@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Light.woff2') format('woff2'),
+        url('OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-SemiBold.woff2') format('woff2'),
+        url('OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Bold.woff2') format('woff2'),
+        url('OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff2') format('woff2'),
+        url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FREESCPT';
+    src: url('../fonts/FREESCPT.eot');
+    src: url('../fonts/FREESCPT.eot') format('embedded-opentype'),
+         url('../fonts/FREESCPT.woff2') format('woff2'),
+         url('../fonts/FREESCPT.woff') format('woff'),
+         url('../fonts/FREESCPT.ttf') format('truetype'),
+         url('../fonts/FREESCPT.svg#FREESCPT') format('svg');
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #555;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: o auto;
+}
+
+.header {
+	font-size: 14px;
+	font-weight: 700;
+	color: #555;
+	height: 80px;
+	position: relative;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 120px 20px 140px;
+}
+
+.header .img {
+	display: block;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+
+}
+
+.menu-opener {
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	display: block;
+	position: relative;
+}
+
+.menu-opener::before,
+.menu-opener::after,
+.menu-opener span {
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 20px;
+	height: 2px;
+	background: #5363db;
+}
+
+.menu-opener::after {
+	top: 19px;
+}
+
+.menu-opener span {
+	top: 26px;
+}
+
+.nav .checkbox:checked + .menu-opener::before {
+	transform: rotate(45deg);
+	top: 18px;
+}
+
+.nav .checkbox:checked + .menu-opener::after, 
+.nav .checkbox:checked + .menu-opener span {
+	transform: rotate(-45deg);
+	top: 18px;
+}
+
+.nav .checkbox {
+	display: none;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav li {
+	padding: 10px 18px;
+	margin: 1px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #555;
+}
+
+.nav a:hover {
+	color: #5363db;
+}
+
+
+
+
+.nav li:active {
+	border: 2px solid #5363db;
+	color: #5363db;
+	transition: all 0.3s;
+}
+
+
+.promo-box {
+	position: relative;
+	height: calc(100vh - 80px);
+}
+
+.promo-box img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.promo-box:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: rgba(83, 99, 219, 0.6);
+}
+
+.promo-box .container {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.form {
+	background: #fff;
+	height: 500px;
+	width: 400px;
+	/*flex-basis: 50%;*/
+	box-shadow: 8px 8px 10px rgba(0,0,0, 0.15);
+	border-radius: 25px;
+	margin-top: 50px;
+	margin-left: 60px; 
+	position: relative;
+}
+
+.form h3 {
+	font-size: 26px;
+	color: #5363db;
+	text-align: center;
+}
+
+.form input {
+	display: block;
+	width: 330px;
+	height: 70px;
+	background: #f2f2f2;
+	border: none;
+	margin: 20px;
+	border-radius: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.form .btn {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+.inputs input {
+
+}
+
+.inputs submit {
+	display: block;
+} 
+
+
+.btn {
+	display: block;
+	background: #5363db; 
+	color: #fff;
+	width: 230px;
+	height: 70px;
+	font-size: 26px;
+	border-radius: 10px;
+	font-weight: 700px;
+	position: relative;
+}
+
+
+
+.text-box-1 {
+	color: #fff;
+	flex-basis: 50%;
+	padding: 0 10px;
+	margin-top: 50px; 
+}
+
+.text-box-1 h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+	line-height: 1.5;
+}
+
+.text-box-1 p {
+	font-family: 'FREESCPT';
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+
+
+
+.price-box {
+	min-height: 700px;
+	position: relative;
+}
+
+.price-box img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*.price-box .container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+*/
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-basis: 33.33%;
+}
+
+.card  {
+	width: 300px;
+	height: 680px;
+	
+	border-radius: 25px;
+	background: #fff;
+	
+}
+
+.card li {
+	list-style: none;
+
+}
+
+.card span {
+	display: block;
+}
+
+/*.card  span:before {
+	content: '\0024';
+}
+
+.card span:before {
+	content: ' / MONTH';
+}
+*/
+
+
+
+.footer {
+	color: #fff;
+}
+
+.footer__top {
+	background: #5b6ceb;
+	height: 450px;
+	/*flex-basis: 100%;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about, .contact-us {
+	flex-basis: 50%;
+}
+
+.contact-us {
+	display: flex;
+
+}
+
+
+.about-text, .contact-text {
+	text-transform: uppercase; 
+}
+
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+
+.soc-icon {
+	margin: 5px;
+	list-style: none;
+	color: #fff;
+}  
+
+.about a {
+	text-decoration: none;
+} 
+
+
+
+.icon-dribbble:before {
+  content: "\eaa7";
+ }
+ .icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.cont-icon {
+	margin: 5px;
+	list-style: none;
+}
+
+
+.footer__bottom {
+	background: #5363d8;
+	height: 100px;
+	flex-basis: 100%;
+}
+
+.footer__bottom .container {
+	flex-basis: 100%;	
+}
+
+
+
+
+@media (max-width: 2400px) {
+	.checkbox, 
+	.menu-opener, 
+	.menu-opener span {
+		display: none;
+	}	
+
+	.hover-link {
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+}
+
+.hover-link:after {
+	content: '';
+	display: block;
+	width: 50%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.hover-link:hover {
+	color: #5363db;
+}
+
+.hover-link:hover::after {
+	color: #5363db;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	.checkbox, 
+	.menu-opener, 
+	.menu-opener span {
+		display: none;
+	}	
+}
+
+@media (max-width: 768px) {
+	.nav ul {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		padding: 10px;
+		background: #5363db;
+		color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s;
+		transform: translate(0, 110px);
+		z-index: 4;
+	}
+
+	.nav a {
+		color: #fff;
+		
+	} 
+
+	.nav a:hover {
+		color: #fff;
+		text-align: center;
+	} 
+
+	.nav li:hover {
+		border: 2px solid #fff;
+	}
+
+	.nav .checkbox:checked ~ ul {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+	}
+
+	.checkbox, 
+	.menu-opener, 
+	.menu-opener span {
+		display: block;
+	}	
+
+	@media (max-width: 600px) {
+		.header .container {
+		
+		margin: 20px 60px 20px 60px;
+	}
+}
