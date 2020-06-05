@@ -16,12 +16,12 @@
 					<input type="checkbox" class="checkbox" id="menu-opener">
 					<label for="menu-opener" class="menu-opener"><span></span></label>
 					<ul>
-						<li><a href="#" class="hover-link" class="active">About us</a></li>
-						<li><a href="#" class="hover-link" class="active">Reservation</a></li>
-						<li><a href="#" class="hover-link" class="active">Gallery</a></li>
-						<li><a href="#" class="hover-link" class="active">Blog</a></li>
-						<li><a href="#" class="hover-link" class="active">Elements</a></li>
-						<li><a href="#" class="hover-link" class="active">Shop</a></li>
+						<li><a href="#" class="hover-link">About us</a></li>
+						<li><a href="#" class="hover-link">Reservation</a></li>
+						<li><a href="#" class="hover-link">Gallery</a></li>
+						<li><a href="#" class="hover-link">Blog</a></li>
+						<li><a href="#" class="hover-link">Elements</a></li>
+						<li><a href="#" class="hover-link">Shop</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -30,7 +30,7 @@
 			<div class="promo-box">
 				<img src="images/bg-01.jpg" alt="image-bg-01">
 				<div class="container">
-					<div class="form">
+					<form class="form">
 						<h3>Trial Class</h3>
 						<div class="inputs">
 							<input type="text" placeholder="Enter your name">
@@ -44,8 +44,8 @@
 								</option>
 							</datalist>	
 							</div>
-						<submit class="btn"><span>Try it</span></submit>
-					</div>
+						<button class="btn"><span>Try it</span></button>
+					</form>
 					<div class="text-box-1">
 						<h1>just balance your mind & body
 						</h1>
@@ -57,44 +57,58 @@
 
 		<div class="price-box">
 			<img src="images/bg-03.jpg" alt="image-bg-03">
-			<div class="container">
+			
 				<div class="cards">
 					<ul>
 						<li>
 							<div class="card01">
-								<span class="span span01">&#36; <span class="number">49</span>/ MONTH</span>
-								<ul>
+								<span class="span span01">
+									<span class="num">&#36; </span>
+									<span class="number">49</span>
+									<span class="num">/ MONTH</span>
+								</span>
+								<ul class="shedule">
 									<li>entry date: mon - fri</li>
 									<li>entry time: 8a.m. - 8p.m.</li>
 									<li>nutrition advicer: no</li>
 								</ul>
-								<submit class="btn">Buy now</submit>
+								<button class="btn btn-buy"><span>Buy now</span></button>
 							</div>	
 						</li>
 						<li>
 							<div class="card02">
-								<span class="span span02">&#36; <span class="number">69</span> / MONTH</span>
-								<ul>
+								<span class="span span02">
+									<span class="num">&#36; </span>
+									<span class="number">69</span>
+									<span class="num">/ MONTH</span>
+								</span>
+								<ul class="shedule">
 									<li>entry date: mon - fri</li>
 									<li>entry time: 8a.m. - 8p.m.</li>
 									<li>nutrition advicer: yes</li>
 								</ul>
-								<submit class="btn">Buy</submit>
+								<form action="https://google.com" target="_blank">
+									<button class="btn btn-buy"><span>Buy now</span></button>
+								</form>
 							</div>
 						<li>
 							<div class="card03">
-								<span class="span span03">&#36; <span class="number">99</span> / MONTH</span>
-								<ul>
+								<span class="span span03">
+									<span class="num">&#36; </span>
+									<span class="number">99</span>
+									<span class="num">/ MONTH</span>
+								</span>
+								<ul class="shedule">
 									<li>entry date: mon - sun</li>
 									<li>entry time: 8a.m. - 8p.m.</li>
 									<li>nutrition advicer: yes</li>
 								</ul>
-								<submit class="btn">Buy now</submit>
+								<button class="btn btn-buy"><span>Buy now</span></button>
 							</div>
 						</li>
 					</ul>
 				</div>
-			</div>
+			
 		</div>
 
 		<footer class="footer">
@@ -104,33 +118,33 @@
 					<span class="about-text">about</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint harum quia molestiae aspernatur beatae officia repudiandae temporibus vel quae adipisci. Amet et inventore provident hic dolore quo dicta culpa optio.</p>
 					<ul>
-						<a href="#"><li class="soc-icon icon-pinterest"></li></a>
-						<a href="#"><li class="soc-icon icon-twitter"></li></a>
-						<a href="#"><li class="soc-icon icon-facebook"></li></a>
-						<a href="#"><li class="soc-icon icon-google-plus3"></li></a>
-						<a href="#"><li class="soc-icon icon-linkedin"></li></a>
+						<li class="soc-icon icon-pinterest"><a href="#" target="_blank"></a></li>
+						<li class="soc-icon icon-twitter"><a href="#" target="_blank"></a></li>
+						<li class="soc-icon icon-facebook"><a href="#" target="_blank"></a></li>
+						<li class="soc-icon icon-google-plus3"><a href="#" target="_blank"></a></li>
+						<li class="soc-icon icon-linkedin"><a href="#" target="_blank"></a></li>
 					</ul>
 				</div>
 				<div class="contact-us">
 					<span class="contact-text">contact us</span>
-					<div class="first">
-						<ul>
-							<li class="cont-icon icon-location2"> 5419 Joseph Mountains<br>Apt.716</li>
-							<li class="cont-icon icon-phone"> +1 234 567 89<br> +1 234 678 90</li>
-						</ul>
-					</div>
-					<div class="second">
-						<ul>
-							<li class="cont-icon icon-envelop"> joga.info@example.com</li>
-							<li class="cont-icon icon-dribbble"> www.example.com</li>
-						</ul>
-					</div>
-					
-						
+					<div class="first-second">
+						<div class="first">
+							<ul>
+								<li class="cont-icon icon-location2"><a href="#"> 5419 Joseph Mountains<br>Apt.716</a></li>
+								<li class="cont-icon icon-phone"><a href="tel:+123456789">+123456789</a><br><a href="tel:+123467890">+123467890</a></li>
+							</ul>
+						</div>
+						<div class="second">
+							<ul>
+								<li class="cont-icon icon-envelop"><a href="mailto:joga.info@example.com">joga.info@example.com</a></li>
+								<li class="cont-icon icon-dribbble"><a href="#">www.example.com</a></li>
+							</ul>
+						</div>		
+					</div>			
 				</div>
 			</div>
 			<div class="footer__bottom">
-				<span>Copyright &copy 2016-2017 Yoga classes</span>
+				<span>Copyright &copy; 2016-2017 Yoga classes</span>
 			</div>
 		
 			
